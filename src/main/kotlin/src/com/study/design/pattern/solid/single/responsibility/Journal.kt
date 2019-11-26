@@ -7,12 +7,12 @@ import java.io.PrintStream
  */
 class Journal {
 
-    val entries = mutableListOf<String>()
+    private val entries = mutableListOf<String>()
 
-    fun addEntry(text: String) = entries.add("${entries.size} : $text")
+    fun addEntry(text: String) = entries.add("${entries.size + 1} : $text")
 
     fun removeEntry() {
-        if (entries.isNotEmpty()){
+        if (entries.isNotEmpty()) {
             entries.removeAt(entries.lastIndex)
         }
     }

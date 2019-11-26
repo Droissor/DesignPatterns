@@ -9,7 +9,7 @@ class Persistence {
 
     fun saveJournal(journal: Journal) = PrintStream(FILE_NAME).use { out -> out.println(journal.toString()) }
 
-    companion object{
+    companion object {
         const val FILE_NAME = "MyJournal"
     }
 }
