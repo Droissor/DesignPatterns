@@ -17,7 +17,7 @@ fun predictRectangleArea(rectangle: Rectangle) {
     val width = rectangle.width
 
     /**Look that i want to treat the square like a rectangle, but i must respect
-     * the square rules and i should't change only height or width */
+     * the square rules and i should't change only height */
     if (rectangle is Square) rectangle.setSize(10) else rectangle.height = 10
 
     println("Expected area of ${10 * width}, got ${rectangle.getArea()}")
