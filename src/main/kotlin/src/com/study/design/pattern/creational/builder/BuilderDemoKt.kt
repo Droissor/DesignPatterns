@@ -1,10 +1,10 @@
 package src.com.study.design.pattern.creational.builder
 
-class BuilderDemo
+class BuilderDemoKt
 
 fun main() {
 
-    val codeBuilder = CodeBuilder("Person")
+    val codeBuilder = CodeBuilderKt("Person")
         .addField("name", "String")
         .addField("age", "Int")
 

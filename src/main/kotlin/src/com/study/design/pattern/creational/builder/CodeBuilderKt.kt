@@ -1,10 +1,10 @@
 package src.com.study.design.pattern.creational.builder
 
-class CodeBuilder(private val className: String) {
+class CodeBuilderKt(private val className: String) {
 
     private val properties = mutableMapOf<String, String>()
 
-    fun addField(name: String, type: String): CodeBuilder {
+    fun addField(name: String, type: String): CodeBuilderKt {
         properties[name] = type
         return this
     }
