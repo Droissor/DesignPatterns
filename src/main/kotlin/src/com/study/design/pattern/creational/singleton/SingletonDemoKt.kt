@@ -6,6 +6,6 @@ fun main(){
 
     val bucketFactory = SingletonBucket.Factory()
 
-    print(SingletonTester.isSingleton(bucketFactory))
+    print(SingletonTesterKt().isSingleton(bucketFactory))
 
 }
