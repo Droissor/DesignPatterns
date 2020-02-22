@@ -9,6 +9,11 @@ class Goblin extends Creature {
     }
 
     @Override
+    public int applyModifier(Statistic statistic, int attributeValue) {
+        if (statistic == Statistic.DEFENSE) { return attributeValue + 1; } else return attributeValue;
+    }
+
+    @Override
     public int getAttack() {
         return (int) game.creatures.stream().filter(creature -> creature instanceof GoblinKing && creature != this).count() +1;
     }

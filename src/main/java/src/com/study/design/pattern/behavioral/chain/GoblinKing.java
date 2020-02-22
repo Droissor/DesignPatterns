@@ -8,6 +8,12 @@ class GoblinKing extends Goblin
     }
 
     @Override
+    public int applyModifier(Statistic statistic, int attributeValue) {
+        if (statistic == Statistic.ATTACK) { return attributeValue + 1; }
+        else return super.applyModifier(statistic, attributeValue);
+    }
+
+    @Override
     public int getAttack() {
         return super.getAttack() + 2;
     }
