@@ -1,6 +1,6 @@
-package src.com.study.design.pattern.behavioral.observable;
+package src.com.study.design.pattern.behavioral.observer;
 
-public class ObservableDemo {
+public class ObserverDemo {
     public static void main(String[] args) {
         Game game = new Game();
 

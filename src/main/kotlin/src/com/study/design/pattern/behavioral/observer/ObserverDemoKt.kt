@@ -1,4 +1,4 @@
-package src.com.study.design.pattern.behavioral.observable
+package src.com.study.design.pattern.behavioral.observer
 
 class ObservableDemoKt
 
